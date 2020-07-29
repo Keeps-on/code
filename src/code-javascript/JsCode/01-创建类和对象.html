@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>创建类和对象</title>
+</head>
+<body>
+    <script>
+        // 创建 class 类
+        class User {
+            constructor(uname){
+                this.uname = uname
+            }
+        }
+        // 利用类创建对象 注意 new 关键字
+        let bob = new User('bob');
+        console.log(bob.uname)
+        // 当使用new的方法创建类的时候会自动的调用 类中的初始化方法 和 Python 类似 constructor == __init__
+    </script>
+</body>
+</html>
